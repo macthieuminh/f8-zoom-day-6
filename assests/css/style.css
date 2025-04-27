@@ -17,6 +17,10 @@ body {
 
     margin: 0;
     padding: 0;
+
+    text-rendering: optimizeLegibility;
+    webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -157,4 +161,91 @@ em {
 }
 .job-detail li + li {
     margin-top: 1.5rem;
+}
+/* Pricing */
+.pricing-wrapper {
+    display: flex;
+    height: 100vh;
+    position: relative;
+    padding: 18px 12px;
+    border-radius: 10px;
+    background-color: #fcc92f;
+}
+.pricing-header {
+    font-size: 2.8rem;
+    font-weight: 900;
+}
+.pricing-list {
+    --spacing: 30px;
+    --column: 3;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--spacing);
+    padding: var(--spacing);
+}
+.pricing-item {
+    height: 380px;
+    cursor: pointer;
+    display: flex;
+    padding: 15px 0;
+    gap: 1.5rem;
+    background-color: #fff;
+    border-radius: 12px;
+    transition: all 0.5s;
+
+    width: calc((100% - (var(--spacing) * calc(var(--column) - 1))) / var(--column));
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+.pricing-item:hover {
+    translate: 10px 10px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+        rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+.pricing-item:hover .pricing-register {
+    color: #222;
+    background-color: #fcc92f;
+}
+.pricing-item-name {
+    color: inherit;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.pricing-item-detail {
+    display: flex;
+    gap: 8px;
+}
+.price-much {
+    font-size: 2.2rem;
+    font-weight: 900;
+}
+.price-month {
+    font-size: 1.5rem;
+    color: #676767;
+}
+
+.pricing-register {
+    display: flex;
+    width: 142px;
+    height: 46px;
+    font-weight: 600;
+    color: #f1f1f1;
+    background-color: #1a1a1a;
+    border-radius: 12px;
+
+    transition: all 0.5s;
+}
+.pricing-register:hover {
+    color: #676767;
+    border: #676767;
+    background-color: #222;
+    text-decoration: none;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px,
+        rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+}
+
+.pricing-details {
+    list-style: disc;
+}
+.pricing-detail {
 }
