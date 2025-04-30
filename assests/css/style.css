@@ -476,3 +476,24 @@ textarea {
     line-height: 1.6;
     color: #222;
 }
+/* Froggy */
+.froggy-title {
+    text-align: center;
+}
+.pond-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 120px;
+}
+.pond-desc {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+}
+.pond-img {
+    height: 340px;
+    width: 340px;
+    object-fit: cover;
+    border-radius: 12px;
+}
