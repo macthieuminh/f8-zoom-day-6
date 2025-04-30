@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Register Layout</title>
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assests/css/reset.css" />
+        <link rel="stylesheet" href="/assests/css/style.css" />
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body class="bg-blue">
+        <div class="container">
+            <div class="register-wrapper">
+                <div class="img-wrapper">
+                    <img class="img" src="./assests/img/museum.jpg" alt="Museum" />
+                </div>
+                <form class="form" action="POST" autocomplete="off">
+                    <h1 class="form__heading">Your Journey to The Future</h1>
+                    <p class="form__desc">
+                        Book entry tickets for full access to the Museum of the Future
+                        experience
+                    </p>
+                    <div class="form__group">
+                        <div class="form__item">
+                            <label for="form__input--fullname" class="form__label">
+                                Full Name:
+                            </label>
+                            <input
+                                class="form__input"
+                                placeholder="first name & last name"
+                                type="text"
+                                name="fullname"
+                                id="form__input--fullname" />
+                        </div>
+                        <div class="form__item">
+                            <label for="form__input--email" class="form__label">
+                                Your Email:
+                            </label>
+                            <input
+                                class="form__input"
+                                placeholder="abc@domain.xyz"
+                                type="email"
+                                name="email"
+                                id="form__input--email" />
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__item">
+                            <label for="form__input--number" class="form__label">
+                                Person:
+                            </label>
+                            <input
+                                class="form__input"
+                                type="number"
+                                name="number"
+                                id="form__input--number"
+                                value="1" />
+                        </div>
+                        <div class="form__item">
+                            <label for="form__input--email" class="form__label">
+                                Date:
+                            </label>
+                            <input
+                                class="form__input"
+                                placeholder="abc@domain.xyz"
+                                type="date"
+                                name="fullname"
+                                id="form__input--date" />
+                        </div>
+                        <div class="form__item">
+                            <label for="form__input--ticketstype" class="form__label">
+                                Ticket Type:
+                            </label>
+                            <select
+                                class="form__input form__input--select"
+                                id="ticketstype">
+                                <option value="VIP">VIP</option>
+                                <option value="audi">Premium</option>
+                                <option value="Early">Early-bird</option>
+                                <option value="General">General</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <div class="form__item">
+                            <label for="form__input--tel" class="form__label">
+                                Phone:
+                            </label>
+                            <input
+                                class="form__input"
+                                placeholder="+84 123 456 789"
+                                type="tel"
+                                name="fullname"
+                                id="form__input--tel" />
+                        </div>
+                        <div class="form__item">
+                            <label for="form__input--email" class="form__label">
+                                Gender:
+                            </label>
+
+                            <div class="form__group--radio">
+                                <div class="group__item">
+                                    <label for="form__input--radioM" class="form__label"
+                                        >Male</label
+                                    >
+                                    <input
+                                        class="form__input--radio"
+                                        placeholder="abc@domain.xyz"
+                                        type="radio"
+                                        name="Gender"
+                                        checked
+                                        id="form__input--radioM" />
+                                </div>
+                                <div class="group__item">
+                                    <label for="form__input--radioF" class="form__label"
+                                        >Female</label
+                                    >
+                                    <input
+                                        class="form__input--radio"
+                                        placeholder="abc@domain.xyz"
+                                        type="radio"
+                                        name="Gender"
+                                        id="form__input--radioF" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__group">
+                        <input
+                            class="form__input--checkbox"
+                            type="checkbox"
+                            name=""
+                            id="form__input--checkbox" />
+                        <label for="form__input--checkbox" class="terms">
+                            By booking, you agree to the
+                            <a
+                                href="https://fullstack.edu.vn/"
+                                target="_blank"
+                                class="link"
+                                >Terms of Service</a
+                            >
+                        </label>
+                    </div>
+                    <div class="form__group">
+                        <a class="btn btn-buy center" href="#!"> Buy Now </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
